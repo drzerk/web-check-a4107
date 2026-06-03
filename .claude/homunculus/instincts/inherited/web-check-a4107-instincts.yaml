@@ -1,0 +1,334 @@
+# Instincts generated from https://github.com/drzerk/web-check-a4107
+# Generated: 2026-06-03T04:06:00.533Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: web-check-a4107-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/drzerk/web-check-a4107
+---
+
+# Web Check A4107 Commit Length
+
+## Action
+
+Keep commit messages concise (~40 characters)
+
+## Evidence
+
+- Average commit message length: 40 chars
+- Based on 1 commits
+
+---
+id: web-check-a4107-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drzerk/web-check-a4107
+---
+
+# Web Check A4107 Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: web-check-a4107-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drzerk/web-check-a4107
+---
+
+# Web Check A4107 Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: web-check-a4107-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drzerk/web-check-a4107
+---
+
+# Web Check A4107 Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: web-check-a4107-instinct-camelcase-files
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Camelcase Files
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: web-check-a4107-instinct-camelcase-functions
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: web-check-a4107-instinct-pascalcase-classes
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: web-check-a4107-instinct-screaming-constants
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: web-check-a4107-instinct-relative-imports
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: web-check-a4107-instinct-named-exports
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: web-check-a4107-instinct-try-catch-errors
+trigger: "When handling errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Try Catch Errors
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style: try-catch
+
+---
+id: web-check-a4107-instinct-no-custom-error-classes
+trigger: "When defining error handling logic"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct No Custom Error Classes
+
+## Action
+
+Do not create custom error classes
+
+## Evidence
+
+- Pattern in errorHandling.customErrorClasses: false
+
+---
+id: web-check-a4107-instinct-no-error-boundaries
+trigger: "When considering error boundaries"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct No Error Boundaries
+
+## Action
+
+Do not implement error boundaries
+
+## Evidence
+
+- Pattern in errorHandling.errorBoundaries: false
+
+---
+id: web-check-a4107-instinct-no-global-error-handler
+trigger: "When considering a global error handler"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct No Global Error Handler
+
+## Action
+
+Do not implement a global error handler
+
+## Evidence
+
+- Pattern in errorHandling.globalHandler: false
+
+---
+id: web-check-a4107-instinct-commit-freeform
+trigger: "When writing a git commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Commit Freeform
+
+## Action
+
+Use a freeform commit message without a prefix
+
+## Evidence
+
+- Pattern in commits.type: freeform
+- Example: 'Add Elektron Analog Rytm MKII MCP server'
+
+---
+id: web-check-a4107-instinct-commit-length
+trigger: "When writing a git commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Commit Length
+
+## Action
+
+Keep the commit message concise (around 40 characters on average)
+
+## Evidence
+
+- Pattern in commits.averageLength: 40
+
+---
+id: web-check-a4107-instinct-test-location-mixed
+trigger: "When adding new tests"
+confidence: 0.6
+domain: testing
+source: repo-analysis
+source_repo: drzerk/web-check-a4107
+---
+
+# Web Check A4107 Instinct Test Location Mixed
+
+## Action
+
+Place tests in both source and dedicated test locations as needed (mixed test location)
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+
