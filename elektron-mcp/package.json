@@ -1,0 +1,35 @@
+{
+  "name": "elektron-rytm-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for controlling the Elektron Analog Rytm MKII over MIDI / SysEx",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "elektron-rytm-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "data",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "elektron",
+    "analog-rytm",
+    "midi",
+    "sysex",
+    "drum-machine"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "easymidi": "^3.1.0"
+  }
+}
