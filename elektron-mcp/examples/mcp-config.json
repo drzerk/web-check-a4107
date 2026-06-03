@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "elektron-rytm": {
+      "command": "node",
+      "args": ["/absolute/path/to/elektron-mcp/src/index.js"],
+      "env": {
+        "RYTM_TRACK_CHANNELS": "BD=1,SD=2,RS=3,CP=4,BT=5,LT=6,MT=7,HT=8,CH=9,OH=10,CY=11,CB=12,FX=13"
+      }
+    }
+  }
+}

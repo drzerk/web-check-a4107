@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "device": "Elektron Analog Rytm MKII",
+    "note": "Named parameter -> MIDI CC map. Values follow the Analog Rytm MIDI implementation chart. CC numbers can shift between firmware revisions and machine types (the SYN1-8 block is machine dependent). Verify against your OS's MIDI chart and edit freely; the server also exposes raw set_cc / set_nrpn tools for anything not listed here. Each entry is sent on the TRACK's MIDI channel.",
+    "valueRange": "0-127 unless noted"
+  },
+  "params": {
+    "syn1": { "cc": 16, "desc": "Synth param 1 (machine dependent, e.g. BD Tune)" },
+    "syn2": { "cc": 17, "desc": "Synth param 2 (machine dependent)" },
+    "syn3": { "cc": 18, "desc": "Synth param 3 (machine dependent)" },
+    "syn4": { "cc": 19, "desc": "Synth param 4 (machine dependent)" },
+    "syn5": { "cc": 20, "desc": "Synth param 5 (machine dependent)" },
+    "syn6": { "cc": 21, "desc": "Synth param 6 (machine dependent)" },
+    "syn7": { "cc": 22, "desc": "Synth param 7 (machine dependent)" },
+    "syn8": { "cc": 23, "desc": "Synth param 8 (machine dependent)" },
+
+    "smp_tune": { "cc": 24, "desc": "Sample tune (TUN)" },
+    "smp_fine": { "cc": 25, "desc": "Sample fine tune (FIN)" },
+    "smp_bitreduction": { "cc": 26, "desc": "Sample bit reduction (BR)" },
+    "smp_slot": { "cc": 27, "desc": "Sample slot select (SMP)" },
+    "smp_start": { "cc": 28, "desc": "Sample start (STA)" },
+    "smp_end": { "cc": 29, "desc": "Sample end (END)" },
+    "smp_loop": { "cc": 30, "desc": "Sample loop (LOP)" },
+    "smp_level": { "cc": 31, "desc": "Sample level (LEV)" },
+
+    "filter_attack": { "cc": 70, "desc": "Filter envelope attack" },
+    "filter_decay": { "cc": 71, "desc": "Filter envelope decay" },
+    "filter_sustain": { "cc": 72, "desc": "Filter envelope sustain" },
+    "filter_release": { "cc": 73, "desc": "Filter envelope release" },
+    "filter_frequency": { "cc": 74, "desc": "Filter cutoff frequency (FREQ)" },
+    "filter_resonance": { "cc": 75, "desc": "Filter resonance (RESO)" },
+    "filter_type": { "cc": 76, "desc": "Filter type (TYPE)" },
+    "filter_env_amount": { "cc": 77, "desc": "Filter envelope amount (ENV)" },
+
+    "amp_attack": { "cc": 78, "desc": "Amp envelope attack (ATK)" },
+    "amp_hold": { "cc": 79, "desc": "Amp envelope hold (HLD)" },
+    "amp_decay": { "cc": 80, "desc": "Amp envelope decay (DEC)" },
+    "amp_overdrive": { "cc": 81, "desc": "Analog overdrive (OVR)" },
+    "amp_delay_send": { "cc": 82, "desc": "Delay send (DEL)" },
+    "amp_reverb_send": { "cc": 83, "desc": "Reverb send (REV)" },
+    "amp_pan": { "cc": 10, "desc": "Pan (PAN)" },
+    "amp_volume": { "cc": 7, "desc": "Track level / volume (VOL)" },
+
+    "lfo_speed": { "cc": 102, "desc": "LFO speed (SPD)" },
+    "lfo_multiplier": { "cc": 103, "desc": "LFO multiplier (MULT)" },
+    "lfo_fade": { "cc": 104, "desc": "LFO fade (FADE)" },
+    "lfo_destination": { "cc": 105, "desc": "LFO destination (DEST)" },
+    "lfo_waveform": { "cc": 106, "desc": "LFO waveform (WAVE)" },
+    "lfo_phase": { "cc": 107, "desc": "LFO start phase (SPH)" },
+    "lfo_mode": { "cc": 108, "desc": "LFO trig mode (MODE)" },
+    "lfo_depth": { "cc": 1, "desc": "LFO depth (DEP), shares mod-wheel CC" }
+  }
+}
